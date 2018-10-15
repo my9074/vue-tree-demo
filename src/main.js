@@ -2,11 +2,11 @@ import Vue from "vue";
 import App from "./App.vue";
 import router from "./router";
 import store from "./store";
-import { Text, Record } from "skeleton-element";
+import "vue-tree-halower/dist/halower-tree.min.css"; // you can customize the style of the tree
+import VTree from "vue-tree-halower";
 
 Vue.config.productionTip = false;
-Vue.use(Text);
-Vue.use(Record);
+Vue.use(VTree);
 
 new Vue({
   router,
